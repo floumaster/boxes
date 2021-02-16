@@ -566,16 +566,15 @@ code {
 .unique-customize-left{
   width: 60%;
   height: 100%;
-  border-right: 1px solid rgb(224, 224, 224);
 }
 
 .unique-customize-right{
   width: 40%;
   height: 100%;
+  border-left: 1px solid rgb(224, 224, 224);
+  border-right: 1px solid rgb(255, 255, 255);
   text-align: center;
   display: block;
-  position: relative;
-  right: 1px;
 }
 
 .unique-customize-left-menu{
@@ -655,7 +654,6 @@ code {
 }
 
 .unique-customize-left hr{
-  width: 80%;
   margin-bottom: -30px;
   height: 1px;
   border: 0;
@@ -676,6 +674,14 @@ code {
   justify-content: center;
 }
 
+.unique-customize-left-menu-qty a{
+  display: flex;
+  width: 6%;
+}
 
+.unique-customize-left-menu-qty img{
+  
+  width: 100%;
+}
 
 
