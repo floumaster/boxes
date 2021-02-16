@@ -13,7 +13,7 @@ import UniqueBox from './components/customize/uniqueBox/uniqueBox';
 function App() {
   const [menu_flag, setFlag] = useState(false);
   const [curr_links, setLinks] = useState([]);
-  const [curr_ending, setEnding] = useState('love');
+  const [curr_ending, setEnding] = useState('love'); 
   const shop = [
     ['Shop', [['Shop All Gifts', '/shop'], ['Most Popular','/popular'], ['Gifts under $100','/low-cost'], ['Limited Editions','']]],
     ['Design your own gift', [['Choose Your Layout!','/customize']]],
