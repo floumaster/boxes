@@ -97,7 +97,7 @@ function App() {
       }
     }, 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, []); 
   return (
     <Context.Provider value={{menu_flag, show_menu, hide_menu, curr_links, changeLinks, curr_ending, wayBoxes, popularBoxes, allBoxes, allTemplates}}>
       <div>
