@@ -1,8 +1,12 @@
-import React,{useContext} from 'react';
+import React,{useState, useContext} from 'react';
 import Context from '../../context'
 import ReactSlider from 'react-slider'
 
 function UniqueBox(){
+    const [grade, setgrade] = useState(180);
+    const [style, setStyle] = useState({
+        'WebkitTransform': `rotate(0deg)`,
+        'transform': `rotate(0deg)`});
     return(
         <>
         <ReactSlider
@@ -27,7 +31,16 @@ function UniqueBox(){
                             <a className="a-btn">CUSTOMIZE</a>  
                         </div>
                         <div className="unique-customize-left-menu-qty">
-                            <div>QTY</div>
+                            <div>
+                            QTY: 
+                            &nbsp;
+                                <div>1</div>
+                                &nbsp;
+                                <a onClick={()=>{setStyle({
+        'WebkitTransform': `rotate(${grade}deg)`,
+        'transform': `rotate(${grade}deg)`});
+        setgrade(grade===0?180:0);}}><img style={style} src="/arrow.png" alt="arrow"/></a>
+                            </div>
                         </div>
                     </div>
                     <div className="unique-customize-left-menu-img">
