@@ -109,6 +109,7 @@ function App() {
           <Route exact path="/popular" component={MostPopular}/>
           <Route exact path="/low-cost" component={LowCost}/>
           <Route exact path="/customize" component={CustomizeMain}/>
+          <Route exact path="/customize/unique-box" component={UniqueBox}/>
         </Switch>
         <Footer/>
       </Router>

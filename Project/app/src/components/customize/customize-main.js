@@ -10,10 +10,10 @@ import UniqueBox from './uniqueBox/uniqueBox';
 function CustomizeMain(){
     const {allTemplates} = useContext(Context)
     return(
-        <Switch>
-                <Route path="/customize/" children={()=><div><TextTop/><ShopContent allBoxes={allTemplates}/></div>} />
-                <Route path="/customize/unique-box" component={UniqueBox} />
-        </Switch>
+        <div>
+            <TextTop/>
+            <ShopContent allBoxes={allTemplates}/>
+        </div>
     );
 }
 

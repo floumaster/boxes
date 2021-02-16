@@ -517,6 +517,146 @@ code {
   width: 700px;
 }
 
+.unique-box-wrapper{
+  font-family: 'Brygada 1918', serif;
+  width: 100%;
+}
+
+.unique-top-text{
+  height: 100px;
+  text-align: center;
+  margin: auto;
+  margin-top: 40px;
+  width: 80%;
+  display: flex;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  color: black;
+}
+
+.unique-top-text-a{
+  color: black;
+  padding-top: 35px;
+  font-size: 40px;
+  width: 60%;
+  display: block;
+}
+
+.unique-top-text div{
+  margin-top: 0px;
+  height: 100%;
+  border-left: 1px solid rgb(224, 224, 224);
+  width: 20%;
+  display: block;
+}
+.unique-top-text h2{
+  color: black;
+  font-size: 18px;
+  display: block;
+  margin-top: 55px;
+}
+
+.unique-customize{
+  margin: auto;
+  width: 80%;
+  height: 300px;
+  display: flex;
+  height: 900px;
+}
+
+.unique-customize-left{
+  width: 60%;
+  height: 100%;
+}
+
+.unique-customize-right{
+  width: 40%;
+  height: 100%;
+  border: 1px solid rgb(224, 224, 224);
+}
+
+.unique-customize-left-menu{
+  display: flex;
+  justify-content: space-between;
+}
+
+.unique-customize-left-menu div{
+  text-align: center;
+  align-items: center;
+  height: 80px;
+}
+
+.unique-customize-left-menu-prise{
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  width: 25%;
+}
+
+.unique-customize-left-menu-qty{
+  display: block;
+  align-items: center;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  width: 25%;
+}
+
+.unique-customize-left-menu-btn{
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  border-left: 1px solid rgb(224, 224, 224);
+  border-right: 1px solid rgb(224, 224, 224);
+  width: 50%;
+}
+
+.unique-customize-left-menu-btn a{
+  margin-top: 20px;
+}
+.unique-customize-left-menu-qty div{
+  display: flex;
+  justify-content: center;
+}
+
+.unique-customize-left-menu-img{
+  width: 100%;
+}
+
+.unique-customize-left-menu-img{
+  width: 100%;
+  height: 600px;
+  margin-bottom: 160px;
+}
+
+.unique-customize-left-menu-img img{
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+  width: 95%;
+}
+.unique-customize-left-menu-img-list{
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.unique-customize-left-menu-img-list a{
+  cursor: pointer;
+  width: 20%;
+}
+
+.unique-customize-left-menu-img-list img{
+  width: 100%;
+}
+
+.unique-customize-left hr{
+  margin-bottom: -30px;
+  height: 1px;
+  border: 0;
+  background-color: rgb(224, 224, 224);
+}
+
 
 
 
