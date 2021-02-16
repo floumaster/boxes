@@ -566,12 +566,16 @@ code {
 .unique-customize-left{
   width: 60%;
   height: 100%;
+  border-right: 1px solid rgb(224, 224, 224);
 }
 
 .unique-customize-right{
   width: 40%;
   height: 100%;
-  border: 1px solid rgb(224, 224, 224);
+  text-align: center;
+  display: block;
+  position: relative;
+  right: 1px;
 }
 
 .unique-customize-left-menu{
@@ -651,10 +655,25 @@ code {
 }
 
 .unique-customize-left hr{
+  width: 80%;
   margin-bottom: -30px;
   height: 1px;
   border: 0;
   background-color: rgb(224, 224, 224);
+}
+
+.unique-customize-right div{
+    width: 80%;
+    display: block;
+    margin: auto;
+    text-align: left;
+    justify-content: left;
+}
+
+.unique-customize-right a{
+  margin-left: 0px;
+  display: flex;
+  justify-content: center;
 }
 
 
