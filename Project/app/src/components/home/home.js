@@ -10,13 +10,11 @@ import Footer from '../header-footer/footer'
 function HomePage(){
     return(
         <div>
-            <Header/>
             <DescriptionCard/>
             <Slogans/>
             <Ways/>
             <Download/>
             <Popular/>
-            <Footer/>
         </div>
     );
 }

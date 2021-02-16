@@ -9,8 +9,8 @@ function AllBoxes(props) {
                     {curr.map((current, index, array)=>{
                         return(
                             <div style={{width: '33.3333%', height:'80%', textAlign:'center'}} key={index}>
-                                <div style={{margin: 'auto', marginTop: '40px',width: '320px', height:'320px',backgroundImage:`url(${current[0]})`, backgroundSize:'cover'}}>
-                                </div>
+                                <a href={current[3]}><div style={{margin: 'auto', marginTop: '40px',width: '320px', height:'320px',backgroundImage:`url(${current[0]})`, backgroundSize:'cover'}}>
+                                </div></a>
                                 <h4>{current[1]}</h4>
                                 <h4>{current[2]}</h4>
                             </div>

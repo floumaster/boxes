@@ -9,11 +9,9 @@ function Shop(){
     const {allBoxes} = useContext(Context)
     return(
         <div>
-            <Header/>
             <h1 style={{textAlign:'center', fontFamily: `'Brygada 1918', serif`, fontSize:'20px', marginTop:'40px'}}>ALL PRODUCTS</h1>
             <ShopContent allBoxes={allBoxes}/>
             <Ways/>
-            <Footer/>
         </div>
     );
 }

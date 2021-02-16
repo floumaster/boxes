@@ -6,6 +6,9 @@ import Context from './components/context'
 import MostPopular from './components/shop/mostPopular'
 import LowCost from './components/shop/lowCost'
 import CustomizeMain from './components/customize/customize-main' 
+import Header from './components/header-footer/header/header';
+import Footer from './components/header-footer/footer';
+import UniqueBox from './components/customize/uniqueBox/uniqueBox';
 
 function App() {
   const [menu_flag, setFlag] = useState(false);
@@ -62,13 +65,13 @@ function App() {
   ['https://manage.teakandtwine.com/storage/images/29649/599f05c3589a0242514fc050d215bb86.png', 'The Home Office - Chambray', '$102.00'],
   ['https://manage.teakandtwine.com/storage/images/25312/2e6698c7208e632db41427c0061e4d05.jpg', 'The Spa Day', '$123.00'],
   ['https://manage.teakandtwine.com/storage/images/28003/39f78245161eb878d18ab2f27e1baaf8.png', 'The Desk Mate', '$88.00']]
-  const allTemplates = [['https://manage.teakandtwine.com/storage/images/1037/f44186293c995a554013376e28bc17e7.jpg', 'Customize: Alex', '$140.00'],
-  ['https://manage.teakandtwine.com/storage/images/981/1c5c44694ed125451a22948722df3e1f.jpg', 'Customize: Melissa', '$130.00'],
-  ['https://manage.teakandtwine.com/storage/images/11743/0f212c53f8a7003f1030bf0b092c27af.jpg', 'Customize: Taylor', '$120.00'],
-  ['https://manage.teakandtwine.com/storage/images/11764/9b74c4b3103b3e12510d6672c0ddaafa.jpg', 'Customize: Sam', '$110.00'],
-  ['https://manage.teakandtwine.com/storage/images/984/232ebe982701a1e77914f1a877951291.jpg', 'Customize: Cassidy', '$80.00'],
-  ['https://manage.teakandtwine.com/storage/images/979/5d56b833dc37206d47b1de5d6acb43fe.jpg', 'Customize: Billy', '$60.00'],
-  ['https://manage.teakandtwine.com/storage/images/11679/e2d3ebcd699895e870790614249146be.jpg', 'Customize: Charlie', '$50.00']]
+  const allTemplates = [['https://manage.teakandtwine.com/storage/images/1037/f44186293c995a554013376e28bc17e7.jpg', 'Customize: Alex', '$140.00', '/customize/unique-box'],
+  ['https://manage.teakandtwine.com/storage/images/981/1c5c44694ed125451a22948722df3e1f.jpg', 'Customize: Melissa', '$130.00', '/products/unique-box'],
+  ['https://manage.teakandtwine.com/storage/images/11743/0f212c53f8a7003f1030bf0b092c27af.jpg', 'Customize: Taylor', '$120.00', '/products/unique-box'],
+  ['https://manage.teakandtwine.com/storage/images/11764/9b74c4b3103b3e12510d6672c0ddaafa.jpg', 'Customize: Sam', '$110.00', '/products/unique-box'],
+  ['https://manage.teakandtwine.com/storage/images/984/232ebe982701a1e77914f1a877951291.jpg', 'Customize: Cassidy', '$80.00', '/products/unique-box'],
+  ['https://manage.teakandtwine.com/storage/images/979/5d56b833dc37206d47b1de5d6acb43fe.jpg', 'Customize: Billy', '$60.00', '/products/unique-box'],
+  ['https://manage.teakandtwine.com/storage/images/11679/e2d3ebcd699895e870790614249146be.jpg', 'Customize: Charlie', '$50.00', '/products/unique-box']]
   const links = {
     Shop: shop,
     Corporate: corporate,
@@ -99,6 +102,7 @@ function App() {
     <Context.Provider value={{menu_flag, show_menu, hide_menu, curr_links, changeLinks, curr_ending, wayBoxes, popularBoxes, allBoxes, allTemplates}}>
       <div>
       <Router>
+        <Header/>
         <Switch>
           <Route exact path="/" component={HomePage}/>
           <Route exact path="/shop" component={Shop}/>
@@ -106,6 +110,7 @@ function App() {
           <Route exact path="/low-cost" component={LowCost}/>
           <Route exact path="/customize" component={CustomizeMain}/>
         </Switch>
+        <Footer/>
       </Router>
       </div>
     </Context.Provider>
