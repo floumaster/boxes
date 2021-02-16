@@ -1,8 +1,16 @@
 import React,{useContext} from 'react';
 import Context from '../../context'
+import ReactSlider from 'react-slider'
 
 function UniqueBox(){
     return(
+        <>
+        <ReactSlider
+    className="horizontal-slider"
+    thumbClassName="example-thumb"
+    trackClassName="example-track"
+    renderThumb={(props, state) => <div {...props}>{state.valueNow}</div>}
+/>
         <div className="unique-box-wrapper">
             <div className="unique-top-text">
                 <a className="unique-top-text-a">Customize: Alex</a>
@@ -50,6 +58,7 @@ function UniqueBox(){
                 </div>
             </div>
         </div>
+        </>
     );
 }
 
