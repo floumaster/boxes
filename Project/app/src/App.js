@@ -8,7 +8,6 @@ import LowCost from './components/shop/lowCost'
 import CustomizeMain from './components/customize/customize-main' 
 
 function App() {
-  console.log('hui');
   const [menu_flag, setFlag] = useState(false);
   const [curr_links, setLinks] = useState([]);
   const [curr_ending, setEnding] = useState('love');
