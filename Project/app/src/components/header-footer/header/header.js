@@ -13,7 +13,7 @@ function Header(){
                     <li onMouseOver={()=>{changeLinks('Custom'); show_menu()}} onMouseLeave={()=>{hide_menu()}}>Custom</li>
                 </ul>
                 <a href="/">
-                    <img href="/" className="logo" src="teak-twine-logo-desktop.svg" alt="logo"/>
+                    <img href="/" className="logo" src="/teak-twine-logo-desktop.svg" alt="logo"/>
                 </a>
                 <ul className="rightUl">
                     <li onMouseOver={()=>{changeLinks('About'); show_menu()}} onMouseLeave={()=>{hide_menu()}}>About</li>

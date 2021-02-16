@@ -6,11 +6,11 @@ function Footer() {
             <div className="footer-wrapper">
                 <div className="footer-links">
                     <div>
-                        <img src="tt.png" alt="tt-logo"/>
+                        <img src="/tt.png" alt="tt-logo"/>
                     </div>
                     <div className="sosial-networks">
-                        <img src="fb.png" alt="fb-logo"/>
-                        <img src="inst.png" alt="inst-logo"/>
+                        <img src="/fb.png" alt="fb-logo"/>
+                        <img src="/inst.png" alt="inst-logo"/>
                     </div>
                 </div>
                 <div className="footer-contacts">
